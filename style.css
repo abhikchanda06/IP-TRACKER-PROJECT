@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #9980FA;
+    font-family: "Montserrat",sans-serif;
+}
+h1{
+    color: #ffb142;
+    text-align: center;
+    margin: 2rem;
+    font-family:'Lato', sans-serif ;
+    font-size: 2.5rem;
+    font-weight: 800rem;
+}
+.Loader{
+    width:8px;
+    height: 15px;
+    background: #f7f1e3;
+    margin: 4px;
+}
+.l1{
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+.l2{
+    animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+
+.l3{
+    animation: loading 1s ease-in-out infinite alternate 0.8s;
+}
+
+
+.loader-container{
+    display: none;
+}
+.details{
+    text-align: center;
+}
+.main-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.ip-display,.location-display{
+    font-size: calc(3rem + 1vw);
+    margin: 1rem;
+}
+.lookup-btn{
+    border: none;
+    background:#353b48;
+    color: #f5f6fa;
+    font-size:1.5rem ;
+    font-weight:700;
+    padding:0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 250ms linear;
+}
+.lookup-btn:hover{
+    opacity: 0.8;
+}
+@keyframes loading{
+ from{
+  transform: scale(1);
+}
+to{
+    transform: scale(1,3);
+}
+}
